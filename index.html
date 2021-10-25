@@ -1,6 +1,19 @@
 <html>
-  <div>hello world!</div>
-  <button onclic="hello()" style="color: red">click this button to say hello</button>
+  <style>
+    .container {
+      display: grid;
+      place-items: center;
+      place-content: center;
+      gap: 8px;
+      height: 100vh;
+      width: 100vw;
+      font-size: 38px
+    }
+  </style>
+  <div class='container'>
+    <div>hello world!</div>
+    <button onclic="hello()" style="color: red">click this button to say hello</button>
+  </div>
   <script>
     function hello() {
       alert("hello")
